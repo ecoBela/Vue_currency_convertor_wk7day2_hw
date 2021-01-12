@@ -9,19 +9,18 @@
 <body>
     <div id="app">
 
-<!-- convert from Euro to any of the listed currencies. 
-    The app should load the exchange rates when the page loads. 
-    The data being retrieved is an object so read up on v-for
-1.insert dropbox for listed currencies
-2. add text box to enter a number value for euros
-3. submit button
-4. Display using placeholder/text interpolation value and 
--->
-<label for="">Choose a currency:</label>
 
-<select v-model="selected">
-  <option v-for="currency in currencies" v-bind:value="currency.value">
-      {{ currency.rate }}</option>
+
+
+
+<label for="amount">Enter amount</label>
+<input id="amount" type="number"/>
+
+<label for="rate-select">Choose a currency:</label>
+
+<select id="rate-select" v-model="selected">
+  <option v-for="currency in currencies" v-bind:value="currencies.value">
+      {{ currency.rates }}</option>
   
 </select>
 

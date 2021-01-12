@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', function(){
         el: '#app',
         data: {
             currencies: {},
-            selected: null,
+            selectedAmount: null,
         },
         mounted() {
             this.fetchCurrencies()
         },
         
-        //add computed to be running in the background
+        //add computed: do the conversion functions here
         methods: {
             fetchCurrencies: function(){
                 fetch("https://api.exchangeratesapi.io/latest")
