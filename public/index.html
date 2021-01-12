@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <script type="text/javascript" src="./js/bundle.js"></script>
+</head>
+<body>
+    <div id="app">
+
+<!-- convert from Euro to any of the listed currencies. 
+    The app should load the exchange rates when the page loads. 
+    The data being retrieved is an object so read up on v-for
+1.insert dropbox for listed currencies
+2. add text box to enter a number value for euros
+3. submit button
+4. Display using placeholder/text interpolation value and 
+-->
+<label for="">Choose a currency:</label>
+
+<select v-model="selected">
+  <option v-for="currency in currencies" v-bind:value="currency.value">
+      {{ currency.rate }}</option>
+  
+</select>
+
+
+
+  
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
