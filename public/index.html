@@ -14,10 +14,9 @@
 
 
 <label for="amount">Enter amount</label>
-<input id="amount" type="number"/>
+<input id="amount" type="number" v-model="amountEntered"/>
 
 <label for="rate-select">Choose a currency:</label>
-
 <select id="rate-select" v-model="selected">
   <option v-for="currency in currencies" v-bind:value="currencies.value">
       {{ currency.rates }}</option>

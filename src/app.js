@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
         el: '#app',
         data: {
             currencies: {},
-            selectedAmount: null,
+            amountEntered: null,
         },
         mounted() {
             this.fetchCurrencies()
